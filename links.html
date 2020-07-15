@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		/* Header */
+		body {
+			position: relative;
+			padding-top: 5em;
+			background-color: #1c1c1c;
+
+		}
+
+		#header {
+			background: #1c1c1c;
+			color: #d5d5d5;
+			cursor: default;
+			height: 5em;
+			left: 0;
+			line-height: 5em;
+			position: fixed;
+			text-align: right;
+			top: 0;
+			width: 100%;
+			z-index: 10001;
+		}
+
+		#header .inner {
+			position: relative;
+			text-align: center;
+		}
+
+
+		#header a {
+			-moz-transition: color 0.2s ease-in-out;
+			-webkit-transition: color 0.2s ease-in-out;
+			-ms-transition: color 0.2s ease-in-out;
+			transition: color 0.2s ease-in-out;
+			display: inline-block;
+			color: #ffffff;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 1.2em;
+		}
+
+		#header a:hover {
+			color: rgba(193, 182, 255, 0.75);
+		}
+
+		#header a:last-child {
+			padding-right: 0em;
+		}
+
+
+		/*button*/
+		.btn {
+
+			display: inherit;
+			cursor: pointer;
+			color: #ffffff;
+			font-family: Arial;
+			font-size: 1em;
+			padding: 0.8em;
+			/*text-shadow: 0px 1px 0px #ffffff;*/
+			text-align: center;	
+			position: relative;
+
+		}
+
+		.btn:hover {
+
+			color: #ffffff;
+			background-color: rgba(193, 182, 255, 0.55)
+		}
+
+		.btn:active {
+			position: relative;
+			top: 1px;
+		}
+
+		/*video*/
+		.fullscreen_video {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			opacity: 1;
+
+		}
+
+		/*div for buttons "a"*/
+		#buttonDiv {
+			position: absolute;
+			background: transparent;
+			/*background-color:rgba(193, 182, 255, 0.35);*/
+			/*border-style: double;*/
+			/*border-color: red;*/
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<nav id="nav">
+				<a href="index.html">Home</a>
+			</nav>
+		</div>
+	</header>
+
+	<video loop muted autoplay class="fullscreen_video" id="video">
+
+		<source src="video/Ahmo_robotArm.mp4" type="video/mp4">
+
+	</video>
+
+	<div id="buttonDiv">
+
+		<a id="btn" class="btn" href="https://1drv.ms/u/s!Ai1VHz-fjsLjgYgkgKlUjUuj3xPcbA?e=NJqBhd">Simple aplications in
+			C# and in PHP,javascript
+		</a>
+
+		<a id="btn" class="btn" href="https://1drv.ms/v/s!Ai1VHz-fjsLjgYd1lc7ZsIIFwoICXw?e=ZrsyfA">My new animation
+			Jyväskylä-Finland
+		</a>
+
+		<a id="btn" class="btn" href="	https://1drv.ms/u/s!Ai1VHz-fjsLjgYd2Sg9Y_aWCQ8GTxg?e=gPrlce">FreeCad (several
+			videos of designed parts for my prototype machine)
+
+		</a>
+
+		<a id="btn" class="btn" href="https://photos.app.goo.gl/D3LdmnrXVuH5aRjQ9">My hobby setup
+		</a>
+
+		<a id="btn" class="btn" href="https://photos.app.goo.gl/vmjsnZa6rAwCJ9VA7">3D modeling-printing
+
+			<a id="btn" class="btn" href="https://photos.app.goo.gl/peN2Eyet1xu1C7xh9">Soldering small project
+
+				<a id="btn" class="btn" href="https://1drv.ms/u/s!Ai1VHz-fjsLjgYdfyDBMZkGTAulcAg?e=Hpgl5W">My animations
+					made in Blender 2.8 "download animations so you can watch in 4K resolution"
+
+					<a id="btn" class="btn" href="https://photos.app.goo.gl/wg8VRcfAZM2w5ynS6">My robot arm
+						(prototype#4)
+
+						<a id="btn" class="btn" href="https://photos.app.goo.gl/5gwxt5xi3gWaQJHD6">My project #1
+							(prototype #1)
+
+							<a id="btn" class="btn" href="https://photos.app.goo.gl/mLBeTdQip4sho3GH6">My project #2
+								(prototype #2)
+
+								<a id="btn" class="btn" href="https://photos.app.goo.gl/QiQymJYG8bsKZasV6">My project #3
+									(My project #3)
+
+									<a id="btn" class="btn" href="https://photos.app.goo.gl/U26PzxBc2ancorn29">My
+										project #5 (My project #5)
+
+										<a id="btn" class="btn" href="https://photos.app.goo.gl/dQ6K9wHH9g72o1vY7">My
+											project #6 (My project #6)
+
+											<a id="btn" class="btn"
+												href="https://photos.app.goo.gl/az1Mgh4ps9wKftyy7">Machines repairing
+												(diferent types)
+
+												<a id="btn" class="btn"
+													href="https://photos.app.goo.gl/e5nufZTBZv2UzXeT6">Prototype-videos
+													(My projects)
+
+													<a id="btn" class="btn"
+														href="https://photos.app.goo.gl/SmrEeYjXeRrJBbiA9">Converting
+														manual Milling machine in to cnc
+
+
+
+														<script src="assets/js/jquery.min.js"></script>
+														<script>
+
+															var over = false;
+															$('#buttonDiv').hover(function () {
+																over = true;
+																$('#video').css("opacity", "0.3");
+															},
+																function () {
+																	over = false;
+																	$('#video').css("opacity", "1");
+																});
+
+														</script>
+	</div>
+
+</body>
