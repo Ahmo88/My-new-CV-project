@@ -25,8 +25,6 @@
 	}
 
 
-
-
 /* Basic /////////////////////////////////////////////////////////////////*/
 
 	@-ms-viewport {
@@ -749,16 +747,14 @@
 		color: #f2a3a5;
 		padding: 20em 0 15em 0;
 		background-color: #0c0c0c;
-		background-image: url("/images/MeAndWife.jpg");
-		
+		background-image: url("..//css/MeAndWife.jpg");	
 	    background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 15% left;
 		text-align: left;
 		position: relative;
 		z-index: 9999;
-		
-		
+				
 	}
 
 		#banner input, #banner select, #banner textarea {
