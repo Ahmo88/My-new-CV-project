@@ -747,7 +747,8 @@
 		color: #f2a3a5;
 		padding: 20em 0 15em 0;
 		background-color: #0c0c0c;
-		background-image: url("../css/images/MeAndWife.jpg");	
+		/*background-image: url("../css/images/MeAndWife.jpg");	*/
+		background-image: url('https://htmlpreview.github.io/?https://raw.githubusercontent.com/Ahmo88/My-new-CV-project/css/images/MeAndWife.jpg');
 	    background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 15% left;
