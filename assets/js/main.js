@@ -1,8 +1,7 @@
-window.onload = function () 
-{
-	$('div[id^="div-"]').hide().fadeIn(2000);
-
-}
+$(window).load(function() {
+	// When the page has loaded
+	$("body").hide().fadeIn(1000);
+  });
 
 (function($) {
 
