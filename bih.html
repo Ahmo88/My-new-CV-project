@@ -11,11 +11,35 @@
 	<link rel="stylesheet" href="main.css" />
 	<!--diferent css path for gitHub and server -->
 
+
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/skel.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
+	<script>
+		$(function () {
+
+
+			$("#up").click(function () {
+				$("html, body").animate({ scrollTop: 0 }, "fast");
+				return false;
+			});
+
+		})
+
+
+	</script>
+
+	<script>
+
+		$(window).load(function () {
+			// When the page has loaded
+			$("body").fadeIn(1000);
+		});
+
+	</script>
 
 	<style>
 		#header {
