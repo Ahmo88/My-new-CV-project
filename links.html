@@ -7,8 +7,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
 
 	<style>
 		/* Header */
@@ -112,7 +110,7 @@
 	</style>
 </head>
 
-<body>
+<body style="display: none;">
 
 	<!-- Header -->
 	<header id="header">
@@ -214,6 +212,11 @@
 			manual Milling machine in to cnc
 
 		</a>
+		<!-- Scripts -->
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
 
 		<script>
 
@@ -226,6 +229,11 @@
 					over = false;
 					$('#video').css("opacity", "1");
 				});
+
+			$(window).load(function () {
+				// When the page has loaded
+				$("body").fadeIn(1000);
+			});
 
 		</script>
 	</div>
