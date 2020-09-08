@@ -1,6 +1,6 @@
 $(window).load(function() {
 	// When the page has loaded
-	$("body").hide().fadeIn(1000);
+	$("body").fadeIn(1000);
   });
 
 (function($) {
