@@ -3,6 +3,16 @@ $(window).load(function() {
 	$("body").fadeIn(1000);
   });
 
+  $(function () {
+
+
+	$("#up").click(function () {
+		$("html, body").animate({ scrollTop: 0 }, "fast");
+		return false;
+	});
+
+})
+
 (function($) {
 
 	skel.breakpoints({
@@ -67,5 +77,7 @@ $(window).load(function() {
 						.css('transition', 'none');
 
 	});
+
+	
 
 })(jQuery);
