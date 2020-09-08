@@ -62,7 +62,7 @@
 		/*button*/
 		.btn {
 
-			display: inherit;
+			display: flex;
 			cursor: pointer;
 			color: #ffffff;
 			font-family: Arial;
@@ -97,13 +97,14 @@
 
 		/*div for buttons "a"*/
 		#buttonDiv {
+			display: none;
 			position: absolute;
 			background: transparent;
-			/*background-color:rgba(193, 182, 255, 0.35);*/
-			/*border-style: double;*/
+			/*background-color:rgba(193, 182, 255, 0.35);
+			/*border-style: double;
 			/*border-color: red;*/
 			top: 50%;
-			left: 50%;
+			left: 20%;
 			transform: translate(-50%, -50%);
 
 		}
@@ -213,11 +214,13 @@
 
 		</a>
 
-
 	</div>
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+
 
 	<script>
 
@@ -230,6 +233,10 @@
 				over = false;
 				$('#video').css("opacity", "1");
 			});
+		$(window).load(function () {
+			// When the page has loaded
+			$("#buttonDiv").fadeIn(2000);
+		});
 
 	</script>
 
