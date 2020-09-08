@@ -7,7 +7,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-
 	<style>
 		/* Header */
 		body {
@@ -236,6 +235,9 @@
 
 		$(document).ready(function () {
 			
+			$("body").css("display", "none")
+			$("body").fadeIn(1000);
+
 			$("#buttonDiv").css("display", "none")
 			$("#buttonDiv").fadeIn(2000);
 		});
