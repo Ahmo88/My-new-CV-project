@@ -97,7 +97,7 @@
 
 		/*div for buttons "a"*/
 		#buttonDiv {
-			display: none;
+			
 			position: absolute;
 			background: transparent;
 			/*background-color:rgba(193, 182, 255, 0.35);
@@ -235,6 +235,8 @@
 			});
 
 		$(document).ready(function () {
+			
+			$("#buttonDiv").css("display", "none")
 			$("#buttonDiv").fadeIn(2000);
 		});
 
