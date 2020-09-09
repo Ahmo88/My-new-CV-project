@@ -338,12 +338,11 @@ body {
 
 }
 
-.inner .logo span
-{
-	padding-left: 0.1em;
-	font-size: 0.7em;
-	font-weight: 100;
-	color: rgba(193, 182, 255, 0.75);
+.inner .logo span {
+    padding-left: 0.1em;
+    font-size: 0.7em;
+    font-weight: 100;
+    color: rgba(193, 182, 255, 0.75);
 }
 
 #header .logo:hover {
@@ -703,6 +702,7 @@ body.is-loading #banner:after {
     }
 
 }
+
 @media screen and (max-width: 480px) {
 
     #one {
@@ -712,10 +712,10 @@ body.is-loading #banner:after {
 }
 
 body {
-     font-family: 'Montserrat';
-	 color: black;
-	 font-weight: 200;
-	 
+    font-family: 'Montserrat';
+    color: black;
+    font-weight: 200;
+
 }
 
 #two {
@@ -869,8 +869,7 @@ body {
 }
 
 
-#footer h2
- {
+#footer h2 {
     color: #fff;
 }
 
