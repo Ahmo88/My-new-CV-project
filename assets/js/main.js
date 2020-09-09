@@ -1,6 +1,9 @@
 $(window).load(function () {
 	// When the page has loaded
 	$("body").fadeIn(1000);
+	$("#alertLabel").fadeIn(1000).delay(2000).fadeOut(1000).fadeIn(1000).delay(1000).fadeOut(1000).fadeIn(1000);
+	
+
 });
 
 
@@ -75,7 +78,7 @@ $(window).load(function () {
 
 $(function () {
 
-    // top page
+	// top page
 	$("#up").click(function () {
 		$("html, body").animate({ scrollTop: 0 }, "fast");
 		return false;
