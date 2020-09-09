@@ -23,7 +23,7 @@ ul {
 body {
     font-family: "Lato", sans-serif;
     font-size: 15pt;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 2;
 }
 
@@ -711,12 +711,7 @@ body.is-loading #banner:after {
 
 }
 
-body {
-    font-family: 'Montserrat';
-    color: black;
-    font-weight: 200;
 
-}
 
 #two {
     padding: 6em 0 4em 0;
