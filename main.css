@@ -262,27 +262,6 @@ section .inner {
     margin: 0 auto;
 }
 
-/*navPanel*/
-
-#navPanel {
-
-    visibility: hidden;
-    overflow-y: auto;
-    position: fixed;
-    right: 0;
-    top: 0;
-    background: #1c1c1c;
-    color: #fff;
-    height: 100%;
-    max-width: 80%;
-    width: 20em;
-    padding: 1.5em;
-    text-transform: uppercase;
-    z-index: 10003;
-    display: none;
-
-}
-
 /* Header */
 
 body {
@@ -401,6 +380,7 @@ body {
 
 }
 
+
 .navPanelToggle {
     position: fixed;
     text-decoration: none;
@@ -410,12 +390,13 @@ body {
     width: 4em;
     display: none;
     z-index: 10002;
+
 }
 
 .navPanelToggle:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free";
     font-style: normal;
     font-weight: normal;
     text-transform: none !important;
@@ -429,12 +410,15 @@ body {
     text-align: center;
     top: 0.5em;
     width: 3.5em;
+    content: "\f0c9";
+    font-weight: 900;
 }
 
 @media screen and (max-width: 980px) {
 
     .navPanelToggle {
         display: block;
+
     }
 
 }
@@ -447,19 +431,32 @@ body {
 
 }
 
-.navPanelToggle *:before {
-    color: #fff;
-    display: block;
-    font-size: 16px;
-    height: 2.25em;
-    left: 0.5em;
-    line-height: 2.25em;
-    position: absolute;
-    text-align: center;
-    top: 0.5em;
-    width: 3.5em;
-}
 
+#navPanel {
+    -moz-transform: translatex(20em);
+    -webkit-transform: translatex(20em);
+    -ms-transform: translatex(20em);
+    transform: translatex(20em);
+    -moz-transition: -moz-transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    -webkit-transition: -webkit-transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    -ms-transition: -ms-transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    -webkit-overflow-scrolling: touch;
+    visibility: hidden;
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #1c1c1c;
+    color: #fff;
+    height: 100%;
+    max-width: 80%;
+    width: 20em;
+    padding: 1.5em;
+    text-transform: uppercase;
+    z-index: 10003;
+    display: none;
+}
 
 #navPanel.visible {
     -moz-transform: translatex(0);
@@ -500,26 +497,16 @@ body {
     right: 0;
     text-align: right;
     top: 0;
-    /*	vertical-align: middle;*/
     width: 5em;
 }
 
 #navPanel .close:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none !important;
-    content: '\f00d';
-    width: 3em;
-    height: 3em;
-    line-height: 3em;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    text-align: center;
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
 }
 
 #navPanel .close:hover {
@@ -533,6 +520,7 @@ body {
     }
 
 }
+
 
 /* Banner */
 
