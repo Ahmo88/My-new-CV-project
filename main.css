@@ -323,7 +323,7 @@ body {
 }
 
 #header .logo {
-    font-family: fantasy;
+    font-family: 'Aclonica';
     display: inline-block;
     height: inherit;
     line-height: inherit;
@@ -336,6 +336,14 @@ body {
     text-transform: none;
     font-weight: normal;
 
+}
+
+.inner .logo span
+{
+	padding-left: 0.1em;
+	font-size: 0.7em;
+	font-weight: 100;
+	color: rgba(193, 182, 255, 0.75);
 }
 
 #header .logo:hover {
@@ -661,7 +669,23 @@ body.is-loading #banner:after {
 /* One-Five */
 
 #one {
-    padding: 6em 0 4em 0;
+    padding: 4em 0 4em 0;
+}
+
+@media screen and (max-width: 1680px) {
+
+    #one {
+        padding: 4em 0 2em 0;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+    #one {
+        padding: 4em 0 2em 0;
+    }
+
 }
 
 @media screen and (max-width: 980px) {
@@ -678,6 +702,20 @@ body.is-loading #banner:after {
         padding: 2em 0 0.1em 0;
     }
 
+}
+@media screen and (max-width: 480px) {
+
+    #one {
+        padding: 4em 0 2em 0;
+    }
+
+}
+
+body {
+     font-family: 'Montserrat';
+	 color: black;
+	 font-weight: 200;
+	 
 }
 
 #two {
