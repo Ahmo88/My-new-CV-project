@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
+@import url(fontawesome.min.css);
 
 /* Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +13,14 @@
     scroll-behavior: smooth;
 }
 
+ol,
+ul {
+    list-style: none;
+}
+
+
 /* Type */
+
 body {
     font-family: "Lato", sans-serif;
     font-size: 15pt;
@@ -53,8 +62,8 @@ h1,
 h2,
 h3,
 h4,
-h5
- {
+h5,
+h6 {
     font-weight: 700;
     line-height: 1.5;
     margin: 0 0 1em 0;
@@ -74,8 +83,8 @@ h1,
 h2,
 h3,
 h4,
-h5
- {
+h5,
+h6 {
     color: #766cd1;
 }
 
@@ -91,6 +100,9 @@ code {
 hr {
     border-bottom-color: #766cd1;
 }
+
+
+/* Button */
 
 input[type="submit"],
 .button {
@@ -117,13 +129,15 @@ input[type="submit"],
     white-space: nowrap;
 }
 
-#banner .button.alt {
-    background-color: transparent;
-    box-shadow: inset 0 0 0 2px #fff;
-    color: #ffffff !important;
+input[type="submit"]:hover,
+button:hover,
+.button:hover {
+    text-decoration: none;
 }
 
+
 /* Form */
+
 form {
     margin: 0 0 2em 0;
 }
@@ -141,7 +155,6 @@ form>.actions {
     form .field {
         margin: 0 0 1.5em 0;
     }
-
     form>.actions {
         margin: 2em 0 0 0 !important;
     }
@@ -153,7 +166,6 @@ form>.actions {
         float: none;
         padding: 0;
     }
-
     form .field.half.first {
         padding: 0;
     }
@@ -161,6 +173,7 @@ form>.actions {
 
 
 /* Image */
+
 .image {
     border-radius: 0;
     border: 0;
@@ -217,6 +230,7 @@ form>.actions {
 
 
 /* Section/Article */
+
 section.special,
 article.special {
     text-align: center;
@@ -230,6 +244,7 @@ section .inner {
 
 
 /* Header */
+
 body {
     position: relative;
     padding-top: 5em;
@@ -325,6 +340,7 @@ body {
 
 
 /* Menu */
+
 #nav {
     display: inline-block;
 }
@@ -468,6 +484,7 @@ body {
 
 
 /* Banner */
+
 #banner {
     background-color: #7c5d5e;
     padding: 20em 0 15em 0;
@@ -479,6 +496,12 @@ body {
     text-align: left;
     position: relative;
     z-index: 9999;
+}
+
+#banner .button.alt {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px #fff;
+    color: #ffffff !important;
 }
 
 #banner .button.alt:hover {
@@ -549,7 +572,6 @@ body.is-loading #banner:after {
     #banner {
         padding: 12em 0 10em 0;
     }
-
     #banner br {
         display: none;
     }
@@ -559,7 +581,6 @@ body.is-loading #banner:after {
     #banner {
         padding: 4em 0 2em 0;
     }
-
     #banner h1 {
         font-size: 1.75em;
     }
@@ -569,7 +590,6 @@ body.is-loading #banner:after {
     #banner {
         padding: 5em 0 3em 0;
     }
-
     #banner ul {
         margin-top: 1em;
     }
@@ -577,6 +597,7 @@ body.is-loading #banner:after {
 
 
 /* One-Five */
+
 #one {
     padding: 4em 0 4em 0;
 }
@@ -652,23 +673,19 @@ body.is-loading #banner:after {
         background: linear-gradient(to bottom, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
         filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#f7f7f7', GradientType=0);
     }
-
     #two .inner {
         -moz-flex-direction: column;
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
     }
-
     #two .inner article {
         width: 100%;
     }
-
     #two .inner article:first-child {
         padding-right: 0;
         padding-bottom: 2em;
     }
-
     #two .inner article:last-child {
         padding-left: 0;
         padding-top: 2em;
@@ -723,7 +740,6 @@ body.is-loading #banner:after {
         -ms-flex-direction: column;
         flex-direction: column;
     }
-
     #three .inner article {
         width: 100%;
         margin: 0 auto;
@@ -744,6 +760,7 @@ body.is-loading #banner:after {
 
 
 /* Footer */
+
 #footer {
     background-color: #766cd1;
     color: #f2a3a5;
@@ -769,7 +786,6 @@ body.is-loading #banner:after {
 #footer input[type="submit"].alt:hover,
 #footer .button.alt:hover {
     background: rgba(255, 255, 255, 0.25);
-
 }
 
 @media screen and (max-width: 480px) {
