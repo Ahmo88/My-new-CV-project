@@ -1,9 +1,8 @@
-@import url(font-awesome.min.css);
+
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 /* Reset */
-
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +15,6 @@
 
 
 /* Body */
-
 body {
     font-family: "Lato", sans-serif;
     font-size: 15pt;
@@ -127,7 +125,6 @@ hr {
 
 
 /* Form */
-
 form {
     margin: 0 0 2em 0;
 }
@@ -165,7 +162,6 @@ form>.actions {
 
 
 /* Image */
-
 .image {
     border-radius: 0;
     border: 0;
@@ -222,7 +218,6 @@ form>.actions {
 
 
 /* Section/Article */
-
 section.special,
 article.special {
     text-align: center;
@@ -236,7 +231,6 @@ section .inner {
 
 
 /*Header*/
-
 #header {
     background: #1c1c1c;
     color: #d5d5d5;
@@ -327,7 +321,6 @@ section .inner {
 
 
 /* Menu */
-
 #nav {
     display: inline-block;
 }
@@ -581,7 +574,6 @@ body.is-loading #banner:after {
 
 
 /* One */
-
 #one {
     padding: 4em 0 4em 0;
 }
@@ -749,7 +741,6 @@ body.is-loading #banner:after {
 
 
 /* Footer */
-
 #footer {
     background-color: #766cd1;
     color: #f2a3a5;
