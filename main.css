@@ -741,6 +741,7 @@ body.is-loading #banner:after {
 
 
 /* Footer */
+
 #footer {
     background-color: #766cd1;
     color: #f2a3a5;
@@ -776,6 +777,7 @@ body.is-loading #banner:after {
     opacity: 0.6;
     cursor: pointer;
     padding-top: .5em;
+   
 }
 
 .fa-arrow-circle-up:hover {
