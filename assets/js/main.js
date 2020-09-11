@@ -1,7 +1,14 @@
 $(window).load(function () {
     // When the page has loaded
     $("body").fadeIn(1000);
-    $("#alertLabel").fadeIn(1000).delay(2000).fadeOut(1000).fadeIn(1000).delay(1000).fadeOut(1000).fadeIn(1000);
+    //$("#alertLabel").fadeIn(1000).delay(2000).fadeOut(1000).fadeIn(1000).delay(1000).fadeOut(1000).fadeIn(1000);
+    // My site it has not completed yet.I will keepupdating.
+
+    $('<label class="infoMsg">My site it has not completed yet.I will keep updating.</label> <i id="excm" class="fas fa-exclamation fa-3x"></i>').appendTo('#banner');
+    
+    setInterval(function() {
+        $('.fa-exclamation').fadeIn(300).fadeOut(500);
+    }, 500);
 
 });
 
