@@ -86,7 +86,7 @@ $(function() {
 
      // bottom page
      $("#down").click(function() {
-        $('html,body').animate({ scrollTop: 10000 }, 'fast');
+        $('html,body').animate({ scrollTop: 9999 }, 'fast');
         return false;
     });
 
