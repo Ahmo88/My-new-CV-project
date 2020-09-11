@@ -469,7 +469,7 @@ section .inner {
     background-color: #7c5d5e;
     padding: 20em 0 15em 0;
     background-color: #0c0c0c;
-    background-image: url("./images/meandwife.jpg");
+    background-image: url("/images/meandwife.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 15% left;
