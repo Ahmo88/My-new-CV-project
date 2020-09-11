@@ -5,7 +5,6 @@ $(window).load(function () {
 
 });
 
-
 (function ($) {
 
     skel.breakpoints({
@@ -40,8 +39,6 @@ $(window).load(function () {
                 skel.breakpoint('medium').active
             );
         });
-
-        // Off-Canvas Navigation.
 
         // Navigation Panel Toggle.
         $('<a href="#navPanel" class="navPanelToggle"></a>')
