@@ -84,4 +84,10 @@ $(function() {
         return false;
     });
 
+     // bottom page
+     $("#down").click(function() {
+        $('html,body').animate({ scrollTop: 10000 }, 'fast');
+        return false;
+    });
+
 })
