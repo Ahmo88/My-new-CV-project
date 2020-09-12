@@ -70,7 +70,7 @@ a {
 
 strong,
 b {
-   font-weight: 400;
+    font-weight: 400;
 }
 
 h1,
@@ -125,15 +125,16 @@ hr {
 /*icon, infoMsg in main.js*/
 .fa-exclamation {
     color: rgb(255, 255, 255);
-    
+
 
 }
+
 .infoMsg {
     font-size: 1em;
     color: rgb(0, 0, 0);
     font-weight: 400;
     /*text-transform: uppercase;*/
-    background-color: whitesmoke;    
+    background-color: whitesmoke;
 }
 
 /* Form */
@@ -174,40 +175,6 @@ form>.actions {
 
 
 /* Image */
-.image {
-    border-radius: 10px;
-    border: 0;
-    display: inline-block;
-    position: relative;
-}
-
-.image img {
-    border-radius: 0;
-    display: block;
-}
-
-.image.left,
-.image.right {
-    max-width: 40%;
-}
-
-.image.left img,
-.image.right img {
-    width: 100%;
-}
-
-.image.left {
-    float: left;
-    margin: 0 1.5em 1em 0;
-    top: 0.25em;
-}
-
-.image.right {
-    float: right;
-    margin: 0 0 1em 1.5em;
-    top: 0.25em;
-}
-
 .image.fit {
     display: block;
     margin: 0 0 0em 0;
@@ -218,29 +185,13 @@ form>.actions {
     width: 100%;
 }
 
-.image.main {
-    display: block;
-    margin: 0 0 3em 0;
-    width: 100%;
-}
 
-.image.main img {
-    width: 100%;
-}
-
-
-/* Section/Article */
-section.special,
-article.special {
-    text-align: center;
-}
-
+/* Section*/
 section .inner {
     max-width: 65em;
     width: calc(100% - 6em);
     margin: 0 auto;
 }
-
 
 /*Header*/
 #header {

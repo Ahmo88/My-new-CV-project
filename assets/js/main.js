@@ -1,12 +1,10 @@
 $(window).load(function () {
     // When the page has loaded
     $("body").fadeIn(1000);
-    //$("#alertLabel").fadeIn(1000).delay(2000).fadeOut(1000).fadeIn(1000).delay(1000).fadeOut(1000).fadeIn(1000);
-    // My site it has not completed yet.I will keepupdating.
 
     $('<label class="infoMsg">My site it has not completed yet.I will keep updating.</label> <i id="excm" class="fas fa-exclamation fa-3x"></i>').appendTo('#banner');
-    
-    setInterval(function() {
+
+    setInterval(function () {
         $('.fa-exclamation').fadeIn(300).fadeOut(500);
     }, 500);
 
@@ -76,18 +74,18 @@ $(window).load(function () {
     });
 
 
-
 })(jQuery);
 
+// top page, bottom page
 $(function () {
 
-    // top page
+    
     $("#up").click(function () {
         $("html, body").animate({ scrollTop: 0 }, "fast");
         return false;
     });
 
-    // bottom page
+    
     $("#down").click(function () {
         $('html,body').animate({ scrollTop: 9999 }, 'fast');
         return false;
@@ -95,22 +93,22 @@ $(function () {
 
 })
 
-/*Added non-passive event listener to a scroll-blocking 'touchstart' event WITHOUT THIS CHROME REPORTS BUG */ 
+/*Added non-passive event listener to a scroll-blocking 'touchstart' event WITHOUT THIS CHROME REPORTS BUG */
 jQuery.event.special.touchstart = {
-    setup: function( _, ns, handle ){
-      if ( ns.includes("noPreventDefault") ) {
-        this.addEventListener("touchstart", handle, { passive: false });
-      } else {
-        this.addEventListener("touchstart", handle, { passive: true });
-      }
+    setup: function (_, ns, handle) {
+        if (ns.includes("noPreventDefault")) {
+            this.addEventListener("touchstart", handle, { passive: false });
+        } else {
+            this.addEventListener("touchstart", handle, { passive: true });
+        }
     }
-  };
-  jQuery.event.special.touchmove = {
-    setup: function( _, ns, handle ){
-      if ( ns.includes("noPreventDefault") ) {
-        this.addEventListener("touchmove", handle, { passive: false });
-      } else {
-        this.addEventListener("touchmove", handle, { passive: true });
-      }
+};
+jQuery.event.special.touchmove = {
+    setup: function (_, ns, handle) {
+        if (ns.includes("noPreventDefault")) {
+            this.addEventListener("touchmove", handle, { passive: false });
+        } else {
+            this.addEventListener("touchmove", handle, { passive: true });
+        }
     }
-  };
+};
