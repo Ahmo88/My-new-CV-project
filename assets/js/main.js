@@ -76,20 +76,21 @@ $(window).load(function () {
 
 })(jQuery);
 
-// top page, bottom page
+// top page, bottom page, rotate logo
 $(function () {
 
-    
+
     $("#up").click(function () {
         $("html, body").animate({ scrollTop: 0 }, "fast");
         return false;
     });
 
-    
+
     $("#down").click(function () {
         $('html,body').animate({ scrollTop: 9999 }, 'fast');
         return false;
     });
+
 
 })
 
