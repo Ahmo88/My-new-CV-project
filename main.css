@@ -368,6 +368,7 @@ section .inner {
     border: none;
 }
 
+
 #navPanel .close {
     text-decoration: none;
     -moz-transition: color 0.2s ease-in-out;
@@ -399,6 +400,11 @@ section .inner {
 
 #navPanel .close:hover {
     color: inherit;
+}
+
+#navPanel a:hover {
+
+    color: rgba(193, 182, 255, 0.75);
 }
 
 @media screen and (max-width: 980px) {
