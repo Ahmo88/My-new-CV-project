@@ -214,13 +214,13 @@ section .inner {
     -webkit-transition: color 0.2s ease-in-out;
     -ms-transition: color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out;
-    display: inline-block;
     padding: 0 1.5em;
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
     font-size: .85em;
+    float: right;
 }
 
 #header a:hover {
