@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap.min.css, mycCv.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myCV.css" type="text/css">
+
+   
+    <!-- Poper.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    
+
+    <!-- jQuery first, then Bootstrap JS, myCv.js --> 
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/myCV.js" type="text/javascript"></script>
+
+    <title>My CV</title>
+</head>
+
+<body id="myBody" class="myBody">
+
+    <!--CONTAINER-->
+    <div class="container-fluid" id="topBar" style="height:50px;">
+        <div class="btn-group d-flex justify-content-center">
+            <button class="btn btn-primary dropdown-toggle" style="top: 5px;" type="button" id="aboutMeBtn"
+                data-toggle="dropdown">About me</button>
+            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="triggerId">
+            
+                <div class="dropdown-divider"></div>
+
+                <div class="card" style="width:300px; align-self: center; margin-left: auto; margin-right: auto;">
+                    <img class="card-img-top" src="./css/walpapers/me1.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Ahmo Tokalic</h4>
+                        <p class="card-text">Phone number: 00000000</p>
+                        <p class="card-text">Email address: example@gmail.com</p>
+                        <p class="card-text">Address: street </p>
+                        <p class="card-text">number and City</p>
+                        <p class="card-text">Country: </p>
+                        <!--<a href="#" class="btn btn-primary">See Profile</a>-->
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-primary" style="margin-left:10px; top: 5px; border-radius: 5px;"
+                id="moreAboutMeBtn">More about me :)</button>
+            <button class="btn btn-primary bg-gradient-success" style="margin-left:10px; top: 5px; border-radius: 5px;"
+                id="myExperienceBtn">My
+                Experience</button>
+            <button class="btn btn-success" style="margin-left:10px; top: 5px; border-radius: 5px;" id="myHobbiesBtn">My
+                hobbies</button>
+            <button class="btn btn-success" style="margin-left:10px; top: 5px; border-radius: 5px;" id="iLikeBtn">I like
+            </button>
+            <button class="btn btn-success" style="margin-left:10px; top: 5px; border-radius: 5px;" id="abotFinlandBtn">What i think about Finland
+            </button>
+            <button class="btn btn-success" style="margin-left:10px; top: 5px; border-radius: 5px;" id="3dBtn">My
+                3d animation</button>
+            <button class="btn btn-success" style="margin-left:10px; top: 5px; border-radius: 5px;"
+                id="guessBtn">Calculate and
+                guess</button>
+        </div>
+
+        <!--WELCOME-->
+        <div id="welcomeTitle" class="welcomeTitle" style="display: none;">Welcome to my presentation
+            <br>This is simple example :)</br>
+        </div>
+
+        <!--MORE ABOUT ME-->
+        <div class="divCloud" id="divCloud" style="display: none; ">
+            <pre style="color: whitesmoke; font-size: 16px; overflow: hidden;">
+
+
+
+
+
+                                                 Hi!
+       
+    
+                My name is Ahmo Tokalic.I was born in Ex-Jugoslavia.
+                Now i live in Finland over 13 years.
+                I am foreman and innovator in one company over 7 years.
+                In this 7 yares i upgraded many machines
+                (manual machines in to automatic),using open source hardware and software.
+                I made many desktop applications in C# 
+                for controling machines, using Arduino controllers.
+                Also i made some web sites (projects) in 
+                HTML,CSS,Javascript,PHP and Asp.net.
+
+            </pre>
+            <button id="hideCloudBtn" class="hideCloudBtn"></button>
+        </div>
+
+    </div>
+    </div>
+
+    <!--MY HOBBIES-->
+    <div class="list-group container" style="width: 300px; margin-top: 50px; display: none;" id="myHobbiesDiv">
+        <button type="button" class="list-group-item list-group-item-action active btn-success">
+            My hobbies:
+        </button>
+        <button type="button" class="list-group-item list-group-item-action">Learning new things</button>
+        <button type="button" class="list-group-item list-group-item-action">Building Arduino projects</button>
+        <button type="button" class="list-group-item list-group-item-action">3D modeling and 3D printing</button>
+        <button type="button" class="list-group-item list-group-item-action">Traveling around Europe with car</button>
+        <button type="button" class="list-group-item list-group-item-action">Fishing</button>
+        <button type="button" class="list-group-item list-group-item-action">Cycling</button>
+    </div>
+
+    <!--I LIKE-->
+    <div class="list-group container" style="width: 300px; margin-top: 50px; display: none;" id="iLikeDiv">
+        <button type="button" class="list-group-item list-group-item-action active btn-success">
+            I like:
+        </button>
+        <button type="button" class="list-group-item list-group-item-action">Explore new technology</button>
+        <button type="button" class="list-group-item list-group-item-action">Meat new friends, new culture </button>
+        <button type="button" class="list-group-item list-group-item-action">Help a poor kids with UNICEF</button>
+        <button type="button" class="list-group-item list-group-item-action">Watch movies</button>
+        <button type="button" class="list-group-item list-group-item-action">Play footbal</button>
+        <button type="button" class="list-group-item list-group-item-action">And i like my wife :) </button>
+    </div>
+
+    <!--WHAT I THINK ABOUT FINLAND-->
+    <div class="list-group container" style="width: 300px; margin-top: 50px; display: none;" id="aboutFinlandDiv">
+        <button type="button" class="list-group-item list-group-item-action active btn-success">
+            What i think about Finland:
+        </button>
+        <button type="button" class="list-group-item list-group-item-action">Finland is a beautiful country</button>
+        <button type="button" class="list-group-item list-group-item-action">Finland is a safe country</button>
+        <button type="button" class="list-group-item list-group-item-action">Finland is clean country</button>
+        <button type="button" class="list-group-item list-group-item-action">Finland will not let you down</button>
+        <button type="button" class="list-group-item list-group-item-action">Finland is country of thousand lakes</button>
+        
+    </div>
+
+
+    <!--EXAMPLE-->
+    <div id=example style="position: absolute; top: 150px;right:300px; display: none;">
+        <ul class="list-group" style="text-align: center; width: 400px;">
+
+            <li class="list-group-item bg-secondary text-white" style="font-size: 16px;" id="list1">Input 3 numbers and
+                click calculate</li>
+            <li class="list-group-item" style="height: 100px;">
+                <input type="text" style="width: 60px;" id="txt1"></input> +
+                <input type="text" style="width: 60px;" id="txt2"></input> -
+                <input type="text" style="width: 60px;" id="txt3"></input> =
+                <input type="text" style="width: 80px;" id="txt4"></input>
+                <button type="button" class="btn btn-info" id="calculateBtn" onclick="calculate()"
+                    style="display: block; align-self: center; margin-right: auto; margin-left: auto; margin-top: 10px;">Calculate..</button>
+
+            </li>
+        </ul>
+        <div class="dropdown-divider" style="width: 400px;"></div>
+        <script type="text/javascript">
+
+            function calculate() {
+
+                var number1 = document.getElementById("txt1").value;
+                var number2 = document.getElementById("txt2").value;
+                var number3 = document.getElementById("txt3").value;
+                var number4 = document.getElementById("txt4").value;
+
+                document.getElementById("txt4").value = parseFloat(number1) + parseFloat(number2) - parseFloat(number3);
+
+                document.getElementById("list1").innerHTML = ("You typed numbers:" + " " + [number1, number2, number3]
+                    + " " + "and resoult is:" + " " + document.getElementById("txt4").value);
+
+            };
+        </script>
+
+
+        <ul class="list-group" style="text-align: center; width: 400px;">
+
+            <li class="list-group-item bg-secondary text-white" id="list2">Input 3 numbers and click calculate</li>
+            <li class="list-group-item" style="height: 100px;">
+                <input type="text" style="width: 60px;" id="txt1a"></input> *
+                <input type="text" style="width: 60px;" id="txt2a"></input> /
+                <input type="text" style="width: 60px;" id="txt3a"></input> =
+                <input type="text" style="width: 80px;" id="txt4a"></input>
+                <button type="button" class="btn btn-info" id="calculateBtn" onclick="calculate2()"
+                    style="display: block; align-self: center; margin-right: auto; margin-left: auto; margin-top: 10px;">Calculate..</button>
+
+            </li>
+        </ul>
+
+        <script type="text/javascript">
+
+            function calculate2() {
+
+                var number1 = document.getElementById("txt1a").value;
+                var number2 = document.getElementById("txt2a").value;
+                var number3 = document.getElementById("txt3a").value;
+                var number4 = document.getElementById("txt4a").value;
+
+                document.getElementById("txt4a").value = parseFloat(number1) * parseFloat(number2) / parseFloat(number3);
+
+                document.getElementById("list2").innerHTML = ("You typed numbers:" + " " + [number1, number2, number3]
+                    + " " + "and resoult is:" + " " + document.getElementById("txt4a").value);
+
+            };
+
+        </script>
+
+        <div class="dropdown-divider" style="width: 400px;"></div>
+        <div class="list-group" style="text-align: center; width: 400px;">
+            <li class="list-group-item bg-secondary text-white" style="font-size: 18px;">What is a largest city in
+                Finland?</li>
+            <button type="button" class="list-group-item list-group-item-action" style="width: 400px; margin: auto;"
+                id="J">Jyväskylä</button>
+            <button type="button" class="list-group-item list-group-item-action" style="width: 350px; margin: auto;"
+                id="O">Oulu</button>
+            <button type="button" class="list-group-item list-group-item-action" style="width: 300px; margin: auto;"
+                id="T">Tampere</button>
+            <button type="button" class="list-group-item list-group-item-action" style="width: 250px; margin: auto;"
+                id="L">Lahti</button>
+            <button type="button" class="list-group-item list-group-item-action" style="width: 200px; margin: auto;"
+                id="H">Helsinki</button>
+            <button type="button" class="list-group-item list-group-item-action" style="width: 150px; margin: auto;"
+                id="V">Vaasa</button>
+            <li class="list-group-item text-dark" style="font-size: 20px; height: 50px; border-top-left-radius: 20px; border-top-right-radius: 20px;" id="answerItem"></li>
+            </li>
+
+            <script>
+                var Jyvaskyla = document.getElementById('J');
+                var Oulu = document.getElementById('O');
+                var Tampere = document.getElementById('T');
+                var Lahti = document.getElementById('L');
+                var Helsinki = document.getElementById('H');
+                var Vaasa = document.getElementById('V');
+
+                var answare = document.getElementById("answerItem");
+
+                if ((Jyvaskyla).onclick = function () {
+                    answare.style.backgroundColor = "red";
+                    answare.innerHTML = "Incorrect answer!";
+                    alert("Incorrect answer!")
+                });
+
+                if (Oulu.onclick = function () {
+                    answare.style.backgroundColor = "red";
+                    answare.innerHTML = "Incorrect answer!";
+                    alert("Incorrect answer!")
+                });
+                if (Tampere.onclick = function () {
+                    answare.style.backgroundColor = "red";
+                    answare.innerHTML = "Incorrect answer!";
+                    alert("Incorrect answer!")
+                });
+
+                if (Lahti.onclick = function () {
+                    answare.style.backgroundColor = "red";
+                    answare.innerHTML = "Incorrect answer!";
+                    alert("Incorrect answer!")
+                });
+
+                if (Helsinki.onclick = function () {
+                    answare.style.backgroundColor = "lightgreen";
+                    answare.innerHTML = "Correct answer!";
+                    alert("Correct answer!")
+                });
+                if (Vaasa.onclick = function () {
+                    answare.style.backgroundColor = "red";
+                    answare.innerHTML = "Incorrect answer!";
+                    alert("Incorrect answer!")
+                });
+
+            </script>
+
+        </div>
+    </div>
+    </div>
+
+    <!--MY EXPERIENCE-->
+    <div>
+
+         <pre class="container-fluid" id="divMyExperience"
+            style="display: none; background-image:linear-gradient(rgb(182, 211, 243), rgb(255, 255, 255)); position: absolute; opacity: 0.7;">
+
+                 <h2 c> 
+            <u>I have experience working with:</u></h2><h5> 
+                 - Microsoft windows
+                 - Microsoft Visual studio (C# Windows Form,WPF,ASP.NET)             
+                 - Visual studio code
+                 - Front-end (HTML,CSS,Javascript/jquery/Bootstrap)
+                 - Back-end (PHP)
+               
+                 - Arduino microcontroler (building and programing projects)
+                 - Electronics 
+                 - Automation
+                 - Engineering tools 
+                 - Stepper motors,drivers,sensors
+                 - FreeCad (3d modeling)
+                 - Blender (3d modeling and animaatio)
+                 - 3d printing
+                 - Mini cnc milling machine
+                 - and more...</h5>
+                
+        </pre>
+    </div>
+
+
+</body>
+
+</html>
