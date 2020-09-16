@@ -64,7 +64,7 @@ h5 {
 }
 
 a {
-    color: #766cd1;
+    color: #4d78d4;
 }
 
 strong,
@@ -77,16 +77,16 @@ h2,
 h3,
 h4,
 h5 {
-    color: #766cd1;
+    color:  #4d78d4;
 }
 
 code {
     background: none;
-    border-color: #766cd1;
+    border-color: #4d78d4;
 }
 
 hr {
-    border-bottom-color: #766cd1;
+    border-bottom-color: #4d78d4;
 }
 
 
@@ -112,13 +112,6 @@ hr {
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
-}
-
-#banner .button.alt {
-    background-color: transparent;
-    box-shadow: inset 0 0 0 2px #fff;
-    color: #ffffff !important;
-
 }
 
 /*icon, infoMsg in main.js*/
@@ -176,10 +169,24 @@ section .inner {
     position: relative;
 }
 
+@media screen and (max-width: 980px) {
+    #header .inner {
+        max-width: 50%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #header .inner {
+        max-width: 60%;
+        width: 60%;
+    }
+}
+
 @media screen and (max-width: 480px) {
     #header .inner {
-        max-width: 90%;
-        width: 90%;
+        max-width: 100%;
+        width: 100%;
     }
 }
 
@@ -202,11 +209,11 @@ section .inner {
     padding-left: 0.1em;
     font-size: 0.7em;
     font-weight: 100;
-    color: rgba(193, 182, 255, 0.75);
+    color:#4d78d4;
 }
 
 #header .logo:hover #gear {
-    color: rgba(193, 182, 255, 0.75);
+    color:#4d78d4;
 }
 
 #header a {
@@ -224,7 +231,7 @@ section .inner {
 }
 
 #header a:hover {
-    color: rgba(193, 182, 255, 0.75);
+    color:#4d78d4;
 
 }
 
@@ -402,7 +409,7 @@ section .inner {
 
 #navPanel a:hover {
 
-    color: rgba(193, 182, 255, 0.75);
+    color:#4d78d4;
 }
 
 @media screen and (max-width: 980px) {
@@ -418,17 +425,13 @@ section .inner {
     background-color: #7c5d5e;
     padding: 20em 0 15em 0;
     background-color: #0c0c0c;
-    background-image: url("./images/meandwife.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("./images/my_Blender_img1_1920x1080.png");
+    background-size: contain;
+    background-repeat: round;
     background-position: 15% left;
     text-align: left;
     position: relative;
     z-index: 9999;
-}
-
-#banner .button.alt:hover {
-    background: rgba(255, 255, 255, 0.25);
 }
 
 #banner:after {
@@ -475,12 +478,12 @@ section .inner {
         z-index: 9999;
     }
 
-    #banner .inner {
+    #banner .inner { 
 
         margin-left: 1em;
-
         z-index: 10000;
         line-height: 0;
+   
     }
 }
 
@@ -494,6 +497,16 @@ section .inner {
 
 #banner h1 span {
     font-weight: 300;
+}
+
+#banner .button.alt {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px #fff;
+    color: #ffffff !important;
+}
+
+#banner .button.alt:hover {
+    background: rgba(255, 255, 255, 0.25);
 }
 
 body.is-loading #banner:after {
@@ -603,7 +616,7 @@ body.is-loading #banner:after {
 @media screen and (max-width: 980px) {
     #two {
         padding: 4em 0 2em 0;
-       
+
         background: linear-gradient(to bottom, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
         filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#f7f7f7', GradientType=0);
     }
@@ -701,10 +714,10 @@ body.is-loading #banner:after {
 /* Footer */
 
 #footer {
-    background-color: #766cd1;
+    background-color: #4d78d4;
     color: #f2a3a5;
     padding: 4em 0 2em 0;
-    background: #766cd1;
+    background: #4d78d4;
 
 }
 
@@ -734,7 +747,7 @@ body.is-loading #banner:after {
 
 #contactIcons {
     font-size: 25px;
-    color: whitesmoke 
+    color: whitesmoke
 }
 
 .fa-arrow-circle-up {
