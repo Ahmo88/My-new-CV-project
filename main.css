@@ -509,7 +509,6 @@ body.is-loading #banner:after {
 }
 
 /*I NEED TO FINSH THIS (IT IS IN MIDLE OF PROCESS)*/
-
 @media screen and (max-width: 1920px) {
     #banner {
         padding: 14em 0 8em 0;
